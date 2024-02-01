@@ -1,6 +1,6 @@
 export function majorityElement(nums: number[]): number {
   let currentMajority = nums[0];
-  let amount = 1;
+  let amount = 0;
 
   for (let i = 1; i < nums.length; i++) {
     if (nums[i] === currentMajority) amount++;
