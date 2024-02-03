@@ -1,4 +1,4 @@
-# 169 - Majority Element
+# [169] - Majority Element
 
 ## Prompt
 
@@ -23,6 +23,9 @@ Constraints:
 - `-10^9 <= nums[i] <= 10^9`
 
 ## Solution
+
+> Time Complexity O(n)\
+> Space Complexity O(1)
 
 The constaints in this problem are very important to this solution with the most
 important being that the majority element always appears _more than_ n/2 times.
@@ -75,3 +78,5 @@ being the value that appears more than half the time.
 | 8     | 2             | 2                | 1      |
 
 So therefore, 2 is the majority number and is calculated in O(1) space.
+
+[169]: https://leetcode.com/problems/majority-element

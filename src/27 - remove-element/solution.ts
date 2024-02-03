@@ -1,4 +1,3 @@
-// Link: https://leetcode.com/problems/remove-element/
 export function removeElement(nums: number[], val: number): number {
   let swapIndex = 0;
   let amountRemaining = nums.length;

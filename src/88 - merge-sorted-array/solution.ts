@@ -1,4 +1,3 @@
-// Link: https://leetcode.com/problems/merge-sorted-array/
 export function merge(nums1: number[], m: number, nums2: number[], n: number): void {
   let index = m + n - 1;
   while (n > 0) {
