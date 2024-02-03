@@ -1,0 +1,84 @@
+# [189](https://leetcode.com/problems/rotate-array) - Rotate Array
+
+## Prompt
+
+Given an integer array nums, rotate the array to the right by k steps, where k
+is non-negative.
+
+Example 1:
+
+> Input: nums = [1,2,3,4,5,6,7], k = 3\
+> Output: [5,6,7,1,2,3,4]\
+
+Example 2:
+
+> Input: nums = [-1,-100,3,99], k = 2\
+> Output: [3,99,-1,-100]
+
+Constraints:
+
+- `1 <= nums.length <= 10^5`
+- `-2^31 <= nums[i] <= 2^31 - 1`
+- `0 <= k <= 10^5`
+
+## Solution
+
+### Approach 1
+
+> Time Complexity O(n)\
+> Space Complexity O(1)?
+
+I've seen a few different ways to solve this problem. The approach I took
+involved removing the last `k` elements of the array and then adding them to the
+front. This is simple and easy to understand, yet it benefits greatly from V8's
+optimizations. If instead of removing the last `k` elements, you instead popped
+one element at a time and then unshifted each, you break the optimization and it
+takes significantly longer to compute. I imagine this is because unshift is an
+O(n) operation that is being called `k` times yet when passing the entire array,
+V8 is able to optimize the operation.
+
+### Approach 2
+
+> Time Complexity O(n)\
+> Space Complexity O(1)
+
+Another approach I've seen is to perform three reversals. It's kind of
+couterintuitive in my mind, but it works. The idea is that rather than
+unshifting and splicing the array, we rotate the elements that are currently at
+the back of the array so that they exist at the front. This causes them to be
+reversed. From there, since the elements are backwards, we need to reverse each
+section, the "front" and the "back".
+
+Let's say that we have an array `[1,2,3,4,5]` and we are shifting it by 3. We
+want our array to look like `[3,4,5,1,2]` with elements `[3,4,5]` existing at the
+front of the array. We can accomplish this by reversing the entire array.
+
+> Before reversal:\
+> [1,2,3,4,5]\
+> \
+> After reversal:\
+> [5,4,3,2,1]
+
+The elements that we want in the front of the array, `[5,4,3]` are now actually
+at the front, but they are backwards. We can flip them around by reversing the
+first `3` values:
+
+> Before second reversal:\
+> [5,4,3,2,1]\
+> \
+> After second reversal:\
+> [3,4,5,2,1]
+
+We are almost there. The last two elements are backwards. We can then reverse
+the last 2 elements or the last `nums.length - 3` elements.
+
+> Before third reversal:\
+> [3,4,5,2,1]\
+> \
+> After third reversal:\
+> [3,4,5,1,2]
+
+After that third reversal, the array has been properly rotated. Although
+this explanation works, I don't know how I'd stumble across this solution
+naturally. I wonder if there is a name for this kind of reversal or if it's
+simply a common approach.
