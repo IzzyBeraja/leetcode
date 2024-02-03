@@ -1,13 +1,20 @@
-# 80 - Remove Duplicates from Sorted Array II [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
+# [80] - Remove Duplicates from Sorted Array II
 
-Prompt: Given a sorted array `nums`, remove the duplicates in-place such that
-duplicates appeared at most twice and return the new length.
+## Prompt
+
+Given a sorted array `nums`, remove the duplicates in-place such that duplicates
+appeared at most twice and return the new length.
 
 Constraints:
 
-- 0 <= nums.length <= 3 \* 10^4
-- -10^4 <= nums[i] <= 10^4
-- nums is sorted in non-decreasing order
+- `0 <= nums.length <= 3 \* 10^4`
+- `-10^4 <= nums[i] <= 10^4`
+- `nums is sorted in non-decreasing order`
+
+## Solution
+
+> Time Complexity O(n)\
+> Space Complexity O(1)
 
 This is very similar to problem 26 as the name suggests but requires us to
 remove duplicates that appear more than twice. At first glance, this can seem
@@ -60,3 +67,5 @@ index = 3, amount = 3
 By doing this, we are able to keep track of how many numbers have met our
 criteria and we don't need to store the data into a separate array or data
 structure.
+
+[80]: https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii

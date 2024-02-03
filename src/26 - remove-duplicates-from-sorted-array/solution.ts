@@ -1,4 +1,3 @@
-// Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array
 export function removeDuplicates(nums: number[]): number {
   let amount = 1;
 
