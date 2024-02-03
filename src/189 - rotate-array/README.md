@@ -47,10 +47,10 @@ couterintuitive in my mind, but it works. The idea is that rather than
 unshifting and splicing the array, we rotate the elements that are currently at
 the back of the array so that they exist at the front. This causes them to be
 reversed. From there, since the elements are backwards, we need to reverse each
-section, the "front" and "back" sections.
+section, the "front" and the "back".
 
-Let's say that we have an array of `[1,2,3,4,5]` and we are shifting it by 3. We
-want our array to look like this `[3,4,5,1,2]` with `[3,4,5]` to exist at the
+Let's say that we have an array `[1,2,3,4,5]` and we are shifting it by 3. We
+want our array to look like `[3,4,5,1,2]` with elements `[3,4,5]` existing at the
 front of the array. We can accomplish this by reversing the entire array.
 
 > Before reversal:\
@@ -70,7 +70,7 @@ first `3` values:
 > [3,4,5,2,1]
 
 We are almost there. The last two elements are backwards. We can then reverse
-the last 2 elements or `nums.length - 3`.
+the last 2 elements or the last `nums.length - 3` elements.
 
 > Before third reversal:\
 > [3,4,5,2,1]\
@@ -78,7 +78,7 @@ the last 2 elements or `nums.length - 3`.
 > After third reversal:\
 > [3,4,5,1,2]
 
-And after that third reversal, the array has been properly rotated. Although
+After that third reversal, the array has been properly rotated. Although
 this explanation works, I don't know how I'd stumble across this solution
 naturally. I wonder if there is a name for this kind of reversal or if it's
 simply a common approach.
