@@ -25,4 +25,24 @@ Constraints:
 
 ## Solution
 
+> Time Complexity: O(n)\
+> Space Complexity: O(1)
+
+In problem 55, the goal is to determine if it is possible to reach the end of an
+array of integers by jumping from index to index. We aren't trying to find the
+least amount of jumps, just if it is possible with the numbers given to reach
+the end.
+
+A way to think about this problem is to imagine you are driving a car and that
+each index is a stop with some jerry cans full of fuel. It takes a full jerry
+can to move to the next stop. Although you could drive as far as possible with
+all the jerry cans you currently have, you could instead drive to the next stop
+(which takes one jerry can) and check if it has more fuel that you currently
+have. If it does, take the cans at that stop and leave the ones you have on you.
+Otherwise, continue to the next stop and repeat until you've reached your
+destination. By doing this, you don't have to backtrack if you end up without
+fuel at a stop that has no jerry cans. You move from stop to stop to see if
+there are better options, allowing you to keep moving forward without looking
+back.
+
 [55]: https://leetcode.com/problems/jump-game

@@ -3,8 +3,8 @@ export function canJump(nums: number[]): boolean {
 
   for (let i = 1; i < nums.length; i++) {
     jumpAmount--;
+    if (jumpAmount < 0) return false;
     if (nums[i] > jumpAmount) jumpAmount = nums[i];
-    if (jumpAmount === 0) return false;
   }
 
   return true;

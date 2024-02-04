@@ -16,4 +16,8 @@ describe('55 - Jump Game', () => {
   it('Case 4', () => {
     expect(canJump([1, 2, 3])).toBe(true);
   });
+
+  it('Case 5', () => {
+    expect(canJump([0, 1])).toBe(false);
+  });
 });
