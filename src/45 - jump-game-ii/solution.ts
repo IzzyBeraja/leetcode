@@ -1,11 +1,20 @@
 export function jump(nums: number[]): number {
+  if (nums.length == 1) return 0;
 
-  return 0;
+  let jumps = 1;
+  let reachable = nums[0];
+  let nextReachable = nums[0];
+  if (reachable >= nums.length - 1) return jumps;
+
+  for (let i = 1; i < nums.length; i++) {
+    nextReachable = Math.max(nextReachable, i + nums[i]);
+
+    if (i === reachable) {
+      reachable = nextReachable;
+      jumps++;
+      if (reachable >= nums.length - 1) break;
+    }
+  }
+
+  return jumps;
 }
-
-/**
- * [2,3,1,1,4]
- * [2] -> [2,1] -> [2,1,1]
- * [2,1,1] -> [2,1,0] -> [2,1] -> [2,0] -> [1] -> [1,3]
- * 
- */
