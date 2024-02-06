@@ -1,0 +1,61 @@
+# [380] Insert Delete GetRandom O(1)
+
+> Difficulty: Medium\
+> Personal Difficulty: ⭐️
+
+## Prompt
+
+Implement the `RandomizedSet` class:
+
+- `RandomizedSet()` Initializes the `RandomizedSet` object
+- `bool insert(int val)` inserts an item `val` into the set if not present.
+  Returns `true` if the item was not present, `false` otherwise.
+- `bool remove(int val)` Removes an item `val` from the set if present. Returns
+  `true` if the item was present, `false` otherwise
+- `int getRandom()` Returns a random element from the current set of elements
+  (it's guaranteed that at least one element exists when this method is called).
+  Each element must have the same probability of being returned
+
+You must implement the functions of the class such that each function works in
+average `O(1)` time complexity.
+
+Example 1:
+
+> Input ["RandomizedSet", "insert", "remove", "insert", "getRandom", "remove", >
+>
+> > "insert", "getRandom"] [[], [1], [2], [2], [], [1], [2], []]\
+> > Output [null, true,false, true, 2, true, false, 2]
+
+Constraints:
+
+- `-2^31 <= val <= 2^31 - 1`
+- At most `2 * 10^5` calls will be made to insert, remove, and getRandom
+- There will be at least one element in the data structure when getRandom is
+  called.
+
+## Solution
+
+> Time Complexity: `O(1)`\
+> Space Complexity: `O(n)`
+
+Personally I'm not a fan of problems like these. Although I understand the value
+of knowing how to create a data structure like this, they often rely on the
+language's built-in data structures and capabilities. If I were to implement
+this in a language like C# or Python, there would already be a working solution
+from a built-in solution from the language's standard library. Since JavaScript
+doesn't have as in-depth of a standard library, it's a little more work.
+
+I'm also not a fan of classes in JS since they do not properly support private
+variables. This means that the user of the class can easily manipulate the
+internal state of the class. This is not a problem in languages like C# or Java
+where the class can be properly encapsulated. We also have to use the `this`
+keyword which is notoriously problematic in JavaScript.
+
+Either way, the approach I took was to create an object that stores all of the
+values we have seen. We can store them in the object as keys and set the value
+to same value or `true`. This will allow us to check if a value is in the set in
+`O(1)` time. We can easily remove those values with the `delete` keyword (which
+I also don't like). From there, we create a generate a random value and access
+that key in the object.
+
+[380]: https://leetcode.com/problems/insert-delete-getrandom-o1
