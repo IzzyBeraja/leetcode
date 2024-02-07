@@ -1,4 +1,7 @@
-# [189](https://leetcode.com/problems/rotate-array) - Rotate Array
+# [189] - Rotate Array
+
+> Difficulty: Medium\
+> Personal Difficulty: ⭐️⭐️⭐️
 
 ## Prompt
 
@@ -50,8 +53,8 @@ reversed. From there, since the elements are backwards, we need to reverse each
 section, the "front" and the "back".
 
 Let's say that we have an array `[1,2,3,4,5]` and we are shifting it by 3. We
-want our array to look like `[3,4,5,1,2]` with elements `[3,4,5]` existing at the
-front of the array. We can accomplish this by reversing the entire array.
+want our array to look like `[3,4,5,1,2]` with elements `[3,4,5]` existing at
+the front of the array. We can accomplish this by reversing the entire array.
 
 > Before reversal:\
 > [1,2,3,4,5]\
@@ -78,7 +81,9 @@ the last 2 elements or the last `nums.length - 3` elements.
 > After third reversal:\
 > [3,4,5,1,2]
 
-After that third reversal, the array has been properly rotated. Although
-this explanation works, I don't know how I'd stumble across this solution
-naturally. I wonder if there is a name for this kind of reversal or if it's
-simply a common approach.
+After that third reversal, the array has been properly rotated. Although this
+explanation works, I don't know how I'd stumble across this solution naturally.
+I wonder if there is a name for this kind of reversal or if it's simply a common
+approach.
+
+[189]: https://leetcode.com/problems/rotate-array

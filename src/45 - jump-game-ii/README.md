@@ -1,7 +1,7 @@
 # [45] - Jump Game II
 
 > Difficulty: Medium\
-> Personal Difficulty: ⭐⭐⭐ (Medium)
+> Personal Difficulty: ⭐⭐⭐
 
 ## Prompt
 
@@ -97,3 +97,5 @@ ones with large amounts of `0`'s in them. It becomes clearer that _where_ the
 jump happens is unimportant, only the distance that we can reach on our current
 and next jumps. This is a very clever solution and I'm glad I was able to learn
 it.
+
+[45]: https://leetcode.com/problems/jump-game-ii

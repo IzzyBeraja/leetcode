@@ -1,5 +1,8 @@
 # [122] - Best Time to Buy and Sell Stock II
 
+> Difficulty: Medium\
+> Personal Difficulty: ⭐️⭐️
+
 ## Prompt
 
 You are given an integer array prices where prices[i] is the price of a given

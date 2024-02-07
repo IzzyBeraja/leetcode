@@ -1,5 +1,8 @@
 # [169] - Majority Element
 
+> Difficulty: Easy\
+> Personal Difficulty: ⭐️⭐️
+
 ## Prompt
 
 Given an array of size n, find the majority element. The majority element is the

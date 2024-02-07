@@ -1,5 +1,8 @@
 # [26] - Remove Duplicates from Sorted Array
 
+> Difficulty: Easy\
+> Personal Difficulty: ⭐⭐
+
 ## Prompt
 
 Given an integer array nums sorted in non-decreasing order, remove the

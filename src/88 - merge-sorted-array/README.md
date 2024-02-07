@@ -1,5 +1,8 @@
 # [88] - Merge Sorted Array
 
+> Difficulty: Easy\
+> Personal Difficulty: ⭐⭐️
+
 ## Prompt
 
 You are given two integer arrays nums1 and nums2, sorted in non-decreasing

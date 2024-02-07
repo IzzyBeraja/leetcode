@@ -1,5 +1,8 @@
 # [80] - Remove Duplicates from Sorted Array II
 
+> Difficulty: Medium\
+> Personal Difficulty: ⭐⭐
+
 ## Prompt
 
 Given a sorted array `nums`, remove the duplicates in-place such that duplicates
@@ -7,7 +10,7 @@ appeared at most twice and return the new length.
 
 Constraints:
 
-- `0 <= nums.length <= 3 \* 10^4`
+- `0 <= nums.length <= 3 * 10^4`
 - `-10^4 <= nums[i] <= 10^4`
 - `nums is sorted in non-decreasing order`
 

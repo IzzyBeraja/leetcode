@@ -1,5 +1,8 @@
 # [27] - Remove Element
 
+> Difficulty: Easy\
+> Personal Difficulty: ⭐⭐
+
 ## Prompt
 
 Given an integer array nums and an integer val, remove all occurrences of val in
