@@ -1,7 +1,7 @@
 # [135] - Candy
 
 > Difficulty: Hard\
-> Personal Difficulty:
+> Personal Difficulty: ⭐️⭐️⭐️
 
 ## Prompt
 
