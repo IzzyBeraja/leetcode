@@ -33,8 +33,8 @@ Constraints:
 
 ## Solution
 
-> Time Complexity: O(n)\
-> Space Complexity: O(n)
+> Time Complexity: `O(n)`\
+> Space Complexity: `O(n)`
 
 Problem 238 asks us to find the product of all the elements of `nums` except
 `nums[i]`. We can solve this problem by keeping track of the product of all
@@ -60,7 +60,7 @@ itself.
 
 In this particular problem, the prompt states that the resulting array does not
 count as extra space for the purposes of space complexity. It doesn't make sense
-since the resulting array does take up O(n) space. I tried to figure out a way
-to truly make this O(1) space, but I couldn't find a way to do it.
+since the resulting array does take up `O(n)` space. I tried to figure out a way
+to truly make this `O(1)` space, but I couldn't find a way to do it.
 
 [238]: https://leetcode.com/problems/product-of-array-except-self

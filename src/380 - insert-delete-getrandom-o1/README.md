@@ -1,4 +1,4 @@
-# [380] Insert Delete GetRandom O(1)
+# [380] Insert Delete GetRandom `O(1)`
 
 > Difficulty: Medium\
 > Personal Difficulty: ⭐️

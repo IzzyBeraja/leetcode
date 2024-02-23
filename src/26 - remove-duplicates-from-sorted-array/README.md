@@ -36,8 +36,8 @@ Constraints:
 
 ## Solution
 
-> Time Complexity O(n)\
-> Space Complexity O(1)
+> Time Complexity `O(n)`\
+> Space Complexity `O(1)`
 
 In this problem we are given a sorted array and are trying to remove all the
 duplicates. We can use a two pointer approach to solve this problem. The first

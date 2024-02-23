@@ -41,8 +41,8 @@ Constraints:
 
 ## Solution
 
-> Time Complexity O(n)\
-> Space Complexity O(1)
+> Time Complexity `O(n)`\
+> Space Complexity `O(1)`
 
 In this problem, we are given an array with some trailing zeros at the end. This
 allows us to add values to the end of the array without worrying about

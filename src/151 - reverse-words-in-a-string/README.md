@@ -40,8 +40,8 @@ Constraints:
 
 ## Solution
 
-> Time Complexity: O(n)\
-> Space Complexity: O(n)
+> Time Complexity: `O(n)`\
+> Space Complexity: `O(n)`
 
 Another problem that can be solved using JavaScript's built-in methods. We need
 to trim the string to remove any leading or trailing spaces, then split the

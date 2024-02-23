@@ -31,8 +31,8 @@ Constraints:
 
 ## Solution
 
-> Time Complexity O(n)\
-> Space Complexity O(1)
+> Time Complexity `O(n)`\
+> Space Complexity `O(1)`
 
 This goal of this problem is to find the maximum difference between two numbers
 in the array. It's important to note that the second number must come after the

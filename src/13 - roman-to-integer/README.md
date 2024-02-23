@@ -56,8 +56,8 @@ Constraints:
 
 ## Solution
 
-> Time Complexity O(n)\
-> Space Complexity O(1)
+> Time Complexity `O(n)`\
+> Space Complexity `O(1)`
 
 When working with Roman numerals, there are some hardcoded values that we need
 to consider. They are the following: `I`, `V`, `X`, `L`, `C`, `D`, and `M`. We

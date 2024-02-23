@@ -16,8 +16,8 @@ Constraints:
 
 ## Solution
 
-> Time Complexity O(n)\
-> Space Complexity O(1)
+> Time Complexity `O(n)`\
+> Space Complexity `O(1)`
 
 This is very similar to problem 26 as the name suggests but requires us to
 remove duplicates that appear more than twice. At first glance, this can seem

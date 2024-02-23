@@ -35,12 +35,12 @@ Constraints:
 
 ## Solution
 
-> Time Complexity O(n)\
-> Space Complexity O(1)
+> Time Complexity `O(n)`\
+> Space Complexity `O(1)`
 
 In this problem, we are given an array and trying to remove all instances of a
 certain value. One way to approach this is the use the remove function that
-arrays have, but often that results in elements being shifted which is an O(n)
+arrays have, but often that results in elements being shifted which is an `O(n)`
 operation. Instead, we can use a two-pointer approach to solve this problem. The
 first pointer keeps track of all the valid numbers that we have seen so far. As
 we iterate through the array, we check to see if the current number is one of

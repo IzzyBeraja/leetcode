@@ -36,8 +36,8 @@ Constraints:
 
 ## Solution
 
-> Time Complexity: O(n)\
-> Space Complexity: O(1)
+> Time Complexity: `O(n)`\
+> Space Complexity: `O(1)`
 
 Originally when working on this problem, I assumed that I would need to keep
 track of all the jumps that I had made and then backtrack to find the minimum

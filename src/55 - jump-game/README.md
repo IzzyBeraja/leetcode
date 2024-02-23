@@ -28,8 +28,8 @@ Constraints:
 
 ## Solution
 
-> Time Complexity: O(n)\
-> Space Complexity: O(1)
+> Time Complexity: `O(n)`\
+> Space Complexity: `O(1)`
 
 In problem 55, the goal is to determine if it is possible to reach the end of an
 array of integers by jumping from index to index. We aren't trying to find the

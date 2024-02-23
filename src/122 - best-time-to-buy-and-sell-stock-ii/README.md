@@ -36,8 +36,8 @@ Constraints:
 
 ## Solution
 
-> Time Complexity: O(n)\
-> Space Complexity: O(1)
+> Time Complexity: `O(n)`\
+> Space Complexity: `O(1)`
 
 In this problem, the goal is to maximize profit by buying stocks when they are
 low and selling when they are high. Because we don't care about how often we are

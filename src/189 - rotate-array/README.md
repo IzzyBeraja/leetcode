@@ -28,8 +28,8 @@ Constraints:
 
 ### Approach 1
 
-> Time Complexity O(n)\
-> Space Complexity O(1)?
+> Time Complexity `O(n)`\
+> Space Complexity `O(1)`?
 
 I've seen a few different ways to solve this problem. The approach I took
 involved removing the last `k` elements of the array and then adding them to the
@@ -37,13 +37,13 @@ front. This is simple and easy to understand, yet it benefits greatly from V8's
 optimizations. If instead of removing the last `k` elements, you instead popped
 one element at a time and then unshifted each, you break the optimization and it
 takes significantly longer to compute. I imagine this is because unshift is an
-O(n) operation that is being called `k` times yet when passing the entire array,
-V8 is able to optimize the operation.
+`O(n)` operation that is being called `k` times yet when passing the entire
+array, V8 is able to optimize the operation.
 
 ### Approach 2
 
-> Time Complexity O(n)\
-> Space Complexity O(1)
+> Time Complexity `O(n)`\
+> Space Complexity `O(1)`
 
 Another approach I've seen is to perform three reversals. It's kind of
 couterintuitive in my mind, but it works. The idea is that rather than

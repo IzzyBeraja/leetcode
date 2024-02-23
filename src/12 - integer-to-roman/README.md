@@ -55,14 +55,14 @@ Constraints:
 
 ## Solution
 
-> Time Complexity O(1)\
-> Space Complexity O(1)
+> Time Complexity `O(1)`\
+> Space Complexity `O(1)`
 
 Although we could create a comprehensive solution that could work for a larger
 set of numerals, since the list is so small, we can actually handle all of the
 cases with if-else statements. It's not the most elegant solution, but it works
-well for our purposes. The solution takes O(1) space and the time complexity is
-based on the size of the number. We could call it O(k) where k is the number of
-digits in the number but will such a small amount, it's effectively O(1).
+well for our purposes. The solution takes `O(1)` space and the time complexity
+is based on the size of the number. We could call it O(k) where k is the number
+of digits in the number but will such a small amount, it's effectively `O(1)`.
 
 [12]: https://leetcode.com/problems/integer-to-roman

@@ -45,8 +45,8 @@ Constraints:
 
 ## Solution
 
-> Time Complexity: O(n)\
-> Space Complexity: O(n)
+> Time Complexity: `O(n)`\
+> Space Complexity: `O(n)`
 
 In this problem, we want to perform a zigzag pattern to arrange our text in a
 funky way. To do this, we want to keep track of the characters that will be in

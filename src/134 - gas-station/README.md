@@ -34,8 +34,8 @@ Constraints:
 
 ## Solution
 
-> Time Complexity: O(n)\
-> Space Complexity: O(1)
+> Time Complexity: `O(n)`\
+> Space Complexity: `O(1)`
 
 In this problem we are given two arrays, `gas` and `cost`, and we need to find
 if there is a starting point that allows us to travel around the array once.

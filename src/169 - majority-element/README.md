@@ -27,8 +27,8 @@ Constraints:
 
 ## Solution
 
-> Time Complexity O(n)\
-> Space Complexity O(1)
+> Time Complexity `O(n)`\
+> Space Complexity `O(1)`
 
 The constaints in this problem are very important to this solution with the most
 important being that the majority element always appears _more than_ n/2 times.
@@ -50,8 +50,8 @@ of times that each value appears:
 > { 2: 5, 3: 3, 4: 1}
 
 We can then iterate and keep track of the largest value which in this case is 2
-with an amount of 5. This would make the time complexity O(n) and space
-complexity O(n).
+with an amount of 5. This would make the time complexity `O(n)` and space
+complexity `O(n)`.
 
 But can we do better?
 
@@ -80,6 +80,6 @@ being the value that appears more than half the time.
 | 7     | 2             | 2                | 0      |
 | 8     | 2             | 2                | 1      |
 
-So therefore, 2 is the majority number and is calculated in O(1) space.
+So therefore, 2 is the majority number and is calculated in `O(1)` space.
 
 [169]: https://leetcode.com/problems/majority-element

@@ -28,8 +28,8 @@ Constraints:
 
 ## Solution
 
-> Time Complexity O(n \* m) n = array length, m = sum of string length\
-> Space Complexity O(1)
+> Time Complexity `O(n * m)` where n = array length, m = sum of string length\
+> Space Complexity `O(1)`
 
 This problem involves finding the longest common prefix of a list of strings.
 I'm using an approach that I now know is called "horizontal scanning". The idea

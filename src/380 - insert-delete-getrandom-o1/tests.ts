@@ -1,6 +1,6 @@
 import { RandomizedSet } from "./solution";
 
-describe("380 - Insert Delete GetRandom O(1)", () => {
+describe("380 - Insert Delete GetRandom `O(1)`", () => {
   it("Case 1", () => {
     const set = new RandomizedSet();
     expect(set.insert(1)).toBe(true);
