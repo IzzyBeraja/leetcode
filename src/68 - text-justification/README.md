@@ -30,7 +30,7 @@ Note:
 
 Example 1:
 
-> Input: words = ["This", "is", "an", "example", "of", "text", >
+> Input: words = ["This", "is", "an", "example", "of", "text",
 > "justification."], maxWidth = 16
 >
 > Output:
@@ -61,9 +61,8 @@ Example 2:
 Example 3:
 
 > Input: words = ["Science", "is", "what", "we", "understand", "well", "enough",
->
-> > "to", "explain", "to", "a", "computer.", "Art", "is", "everything", "else",
-> > "we", "do"], maxWidth = 20
+> "to", "explain", "to", "a", "computer.", "Art", "is", "everything", "else",
+> "we", "do"], maxWidth = 20
 >
 > Output:
 >
