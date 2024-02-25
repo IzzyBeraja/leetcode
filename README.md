@@ -17,29 +17,31 @@ think are important to know.
 
 At the top of each `README.md` file, you will find a difficulty rating and my
 personal difficulty rating. The personal difficulty rating is based on how hard
-I believe the problem is. Here is how I determine the difficulty:
+I believe the problem is.
 
-### Very Easy - ⭐️
+### Difficulty Ratings
+
+#### Very Easy - ⭐️
 
 The solutions to these problems are often solved with a brute force approach.
 They usually rely on simple logic or a built-in function that can solve the
 problem
 
-### Easy - ⭐️⭐️
+#### Easy - ⭐️⭐️
 
 These problems require a little more thought in how they are solved. You may
 need to iterate through an array or object and perform some logic on the data
 provided, but there aren't any complex algorithms or data structures required to
 solve them
 
-### Medium - ⭐️⭐️⭐️
+#### Medium - ⭐️⭐️⭐️
 
 These problems generally have a solution that isn't clearly obvious at first
 glance and cannot be solved quickly with a brute force approach. There may be a
 trick to understanding and later finding the solution which make them harder
 than the previous problems
 
-### Hard - ⭐️⭐️⭐️⭐️
+#### Hard - ⭐️⭐️⭐️⭐️
 
 These problems are more involved than the previous ones as they may require
 mutliple steps, functions, or algorithms to work in tandem. In some cases,
@@ -47,7 +49,7 @@ uncommon data structures or algorithms may be required to solve the problem.
 They cannot be solved with brute force and have some important edge cases to
 consider
 
-### Very Hard - ⭐️⭐️⭐️⭐️⭐️
+#### Very Hard - ⭐️⭐️⭐️⭐️⭐️
 
 These problems are the most difficult and are the most involved. They have
 multiple steps, many edge cases, and they may not have a clear solution at
