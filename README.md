@@ -53,8 +53,9 @@ consider
 
 These problems are the most difficult and are the most involved. They have
 multiple steps, many edge cases, and they may not have a clear solution at
-first. There are many edge cases to consider and can be especially challenging
-in languages without built-in functions or data structures
+first. These can be especially challenging in languages without built-in
+functions or data structures. I wouldn't expect to see many of these problems in
+an interview setting as they would be difficult to solve in the allotted time
 
 ## Solutions
 
