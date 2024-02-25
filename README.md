@@ -1,6 +1,6 @@
 # LeetCode Problem Solving
 
-I am solving LeetCode problems and documenting my solutions here. I am using
+I am solving LeetCode problems and documenting my submissions here. I am using
 TypeScript for all of my solutions and Jest for testing. I've been doing these
 for fun in my free time and to keep my problem solving skills sharp.
 
@@ -19,27 +19,40 @@ At the top of each `README.md` file, you will find a difficulty rating and my
 personal difficulty rating. The personal difficulty rating is based on how hard
 I believe the problem is. Here is how I determine the difficulty:
 
-- ⭐️: Very Easy - The solutions to these problems are often solved with a brute
-  force approach. They usually rely on simple logic or a built-in function that
-  can solve the problem
-- ⭐️⭐️: Easy - These problems require a little more thought in how they are
-  solved. You may need to iterate through an array or object and perform some
-  logic on the data provided, but there aren't any complex algorithms or data
-  structures required to solve them
-- ⭐️⭐️⭐️: Medium - These problems generally have a solution that isn't
-  clearly obvious at first glance and cannot be solved quickly with a brute
-  force approach. There may be a trick to understanding and later finding the
-  solution which make them harder than the previous problems
-- ⭐️⭐️⭐️⭐️: Hard - These problems are more involved than the previous ones
-  as they may require mutliple steps, functions, or algorithms to work in
-  tandem. In some cases, uncommon data structures or algorithms may be required
-  to solve the problem. They cannot be solved with brute force and have some
-  important edge cases to consider
-- ⭐️⭐️⭐️⭐️⭐️: Very Hard - These problems are the most difficult and are the
-  most involved. They have multiple steps, many edge cases, and they may not
-  have a clear solution at first. There are many edge cases to consider and can
-  be especially challenging in languages without built-in functions or data
-  structures
+### Very Easy - ⭐️
+
+The solutions to these problems are often solved with a brute force approach.
+They usually rely on simple logic or a built-in function that can solve the
+problem
+
+### Easy - ⭐️⭐️
+
+These problems require a little more thought in how they are solved. You may
+need to iterate through an array or object and perform some logic on the data
+provided, but there aren't any complex algorithms or data structures required to
+solve them
+
+### Medium - ⭐️⭐️⭐️
+
+These problems generally have a solution that isn't clearly obvious at first
+glance and cannot be solved quickly with a brute force approach. There may be a
+trick to understanding and later finding the solution which make them harder
+than the previous problems
+
+### Hard - ⭐️⭐️⭐️⭐️
+
+These problems are more involved than the previous ones as they may require
+mutliple steps, functions, or algorithms to work in tandem. In some cases,
+uncommon data structures or algorithms may be required to solve the problem.
+They cannot be solved with brute force and have some important edge cases to
+consider
+
+### Very Hard - ⭐️⭐️⭐️⭐️⭐️
+
+These problems are the most difficult and are the most involved. They have
+multiple steps, many edge cases, and they may not have a clear solution at
+first. There are many edge cases to consider and can be especially challenging
+in languages without built-in functions or data structures
 
 ## Solutions
 
