@@ -32,6 +32,9 @@ Constraints:
 
 ## Solution
 
+> Time Complexity: `O(n)`\
+> Space Complexity: `O(n)`
+
 This problem is a counting problem where we need to keep track of the characters
 that we have seen in `magazine` and check if they exist in `ransomNote`. We do
 this by keeping an object containing all the letters we have found in
