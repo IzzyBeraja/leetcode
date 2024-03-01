@@ -1,4 +1,4 @@
-# [48] - Rotate Image
+# [48] - Rotate Image [00:32:46]
 
 > Difficulty: `Medium`\
 > Personal Difficulty: ⭐️⭐️⭐️
