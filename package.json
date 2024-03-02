@@ -2,7 +2,6 @@
   "name": "leetcode",
   "version": "1.0.0",
   "description": "Solutions to various leetcode problems",
-  "main": "index.js",
   "author": "Izzy Beraja",
   "license": "ISC",
   "scripts": {
