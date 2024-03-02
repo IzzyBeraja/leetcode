@@ -1,0 +1,45 @@
+# [202] - Happy Number [00:09:16]
+
+> Difficulty: Easy\
+> Personal Difficulty: ⭐️⭐️
+
+## Prompt
+
+Write an algorithm to determine if a number `n` is happy.
+
+A happy number is a number defined by the following process:
+
+- Starting with any positive integer, replace the number by the sum of the
+  squares of its digits.
+- Repeat the process until the number equals 1 (where it will stay), or it loops
+  endlessly in a cycle which does not include 1.
+- Those numbers for which this process ends in 1 are happy.
+
+Return `true` if `n` is a happy number, and `false` if not.
+
+Example 1:
+
+> Input: n = 19\
+> Output: true
+
+Example 2:
+
+> Input: n = 2\
+> Output: false
+
+Constraints:
+
+- `1 <= n <= 2^31 - 1`
+
+## Solution
+
+> Time Complexity: `O(n)`\
+> Space Complexity: `O(n)`
+
+This problem requires us to find if a number is "happy" by summing the squares
+of the digits of the number and repeating until we reach 1 or we loop endlessly.
+We can solve this problem by using a hash map to keep track of the numbers we
+have seen so far. If we see a number we have already seen, we know we are in a
+loop and can return `false`. If we reach 1, we can return `true`.
+
+[202]: https://leetcode.com/problems/happy-number/
