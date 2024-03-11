@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <p>This is the main page now</p>
-      <Link href="/leetcode">Leetcode</Link>
+      <p>This is the leetcode page</p>
+      <Link href="/">Home</Link>
     </main>
   );
 }
