@@ -1,4 +1,4 @@
-import SideBar from "@/components/SideBar/SideBar";
+import LeftSideBar from "@/components/LeftSideBar/LeftSideBar";
 
 import classes from "./layout.module.css";
 
@@ -9,8 +9,9 @@ interface Props {
 export default function Layout({ children }: Props) {
   return (
     <div className={classes.container}>
-      <SideBar />
-      {children}
+      <LeftSideBar style={{ width: "18rem" }} />
+      <div style={{ flex: 1 }}>{children}</div>
+      <LeftSideBar style={{ width: "18rem" }} />
     </div>
   );
 }

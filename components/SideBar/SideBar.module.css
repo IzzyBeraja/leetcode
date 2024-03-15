@@ -1,9 +1,0 @@
-.container {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow-y: auto;
-  border-right: 1px solid white;
-  padding: var(--mantine-spacing-xs);
-  padding-bottom: calc(var(--mantine-spacing-xs) + var(--header-height));
-}
