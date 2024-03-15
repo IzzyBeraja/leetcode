@@ -1,0 +1,9 @@
+.container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
+  height: var(--header-height);
+}
