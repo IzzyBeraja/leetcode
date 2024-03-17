@@ -1,0 +1,84 @@
+---
+title: Minimum Window Substring
+problemNumber: 76
+completionDate: 02/26/2024
+difficulty: Hard
+personalDifficulty: ⭐️⭐️⭐️⭐️
+topics: [hash-table, string, sliding-window]
+url: https://leetcode.com/problems/minimum-window-substring/
+---
+
+# Prompt
+
+Given two strings `s` and `t` of lengths `m` and `n` respectively, return the
+minimum window substring of `s` such that every character in `t` (including
+duplicates) is included in the window. If there is no such substring, return the
+empty string `""`.
+
+The testcases will be generated such that the answer is unique.
+
+Example 1:
+
+> Input: s = "ADOBECODEBANC", t = "ABC"\
+> Output: "BANC"
+
+Example 2:
+
+> Input: s = "a", t = "a"\
+> Output: "a"
+
+Example 3:
+
+> Input: s = "a", t = "aa"\
+> Output: ""
+
+Constraints:
+
+- `m == s.length`
+- `n == t.length`
+- `1 <= m, n <= 10^5`
+- `s` and `t` consist of uppercase and lowercase English letters.
+
+# Solution
+
+> Time Complexity: `O(n)`\
+> Space Complexity: `O(n)`
+
+In this problem, we are looking for the minimum window substring of `s` such
+that every character in `t` is included in the window. To do this, we need to
+break the problem down into smaller subproblems.
+
+The first step is to create a frequency map of the characters in `t`. This will
+allow us to keep track of the characters we need to find in `s`. We can easily
+find this by looping over `t` and incrementing the frequency of each character.
+
+Next, we need to find the minimum window substring. In my approach, I increased
+right pointer until I found all the entries in the frequency map. To avoid
+having to check every character in the frequency map, I kept track of the number
+of characters I still needed to find and incremented the count when I found it.
+
+Once I found all the characters, I started work on the left pointer. The main
+idea here is that we can move the left pointer to the right if the character at
+that pointer is not in the frequency map or if the frequency of the character is
+greater than the frequency in the frequency map. Each time we move the left
+pointer, we need to update the minimum window substring if it is smaller than
+the current minimum window substring. Once we have minimzied the window as much
+as possible, we can move the right pointer again. We can skip all the characters
+that are not in the frequency map, as they will not affect the minimum window
+substring. Once we have reached the end of the string, we can return the
+substring that we found. If the window was never decremented, it will have a
+value that is larger than the length of the string, so we can return an empty
+string.
+
+Looking at other solutions, I noticed that someone else had created a more
+concise answer using a similar approach. I included it since I think it's really
+well done. Part of the reason I like it is that I was struggling with creating a
+proper exit condition for the while loop. Although mine works, I have to use a
+`break` to exit early which I think looks a bit messy. The other solution keeps
+track of a count similar to my `wFreqCount` which when incremented shows there
+is a missing character that needs to be found. There are also no `continue`s
+which I also think makes it look better than mine.
+
+This problem requires a good understanding of looping, pointers, and data
+structures. It is definitely a hard problem, but it is a good exercise in
+problem solving.
