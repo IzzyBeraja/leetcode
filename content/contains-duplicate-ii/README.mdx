@@ -1,0 +1,59 @@
+---
+title: Contains Duplicate II
+problemNumber: 219
+completionDate: 03/01/2024
+difficulty: Easy
+personalDifficulty: ⭐️⭐️
+timeSpent: 0:03:52
+topics: [array, hash-table, sliding-window]
+url: https://leetcode.com/problems/contains-duplicate-ii/
+---
+
+# Prompt
+
+Given an integer array `nums` and an integer `k`, return `true` if there are two
+distinct indices `i` and `j` in the array such that `nums[i] == nums[j]` and
+`abs(i - j) <= k`.
+
+Example 1:
+
+> Input: nums = [1,2,3,1], k = 3\
+> Output: true
+
+Example 2:
+
+> Input: nums = [1,0,1,1], k = 1\
+> Output: true
+
+Example 3:
+
+> Input: nums = [1,2,3,1,2,3], k = 2\
+> Output: false
+
+Constraints:
+
+- `1 <= nums.length <= 10^5`
+- `-10^9 <= nums[i] <= 10^9`
+- `0 <= k <= 10^5`
+
+# Solution
+
+> Time Complexity: `O(n)`\
+> Space Complexity: `O(n)`
+
+In this problem, we are looking for two numbers that are duplicates and within
+`k` indices of each other. We can use a hash map to keep track of the numbers we
+have seen so far. For every value in the `nums` array, we check if the number is
+already in the hash map. If it is in hash map, we check if the difference
+between the current index and the index of the number in the hash map is less
+than or equal to `k`. If not, we add the number to the hash map and continue. If
+we find a number and it is within `k` indices of its duplicate, we return
+`true`, otherwise we can overwrite the index of the number in the hash map with
+the current index and continue. If we iterate through the entire array and have
+not returned `true`, we return `false`.
+
+Why overwrite the index of the number in the hash map? If we find a duplicate
+and it is not within `k` indices of the previous duplicate, it will not be
+within `k` indices of any other duplicate in the list. Therefore, we can
+overwrite the index of the number in the hash map with the current index and
+continue.

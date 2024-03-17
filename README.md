@@ -57,7 +57,7 @@ first. These can be especially challenging in languages without built-in
 functions or data structures. I wouldn't expect to see many of these problems in
 an interview setting as they would be difficult to solve in the allotted time
 
-## Solutions
+# Solutions
 
 I've included a file in each directory called `solution.ts` that contains my
 code for solving the problem. They tend not to include comments as the

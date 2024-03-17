@@ -1,0 +1,74 @@
+---
+title: Minimum Size Subarray Sum
+problemNumber: 209
+completionDate: 02/25/2024
+difficulty: Medium
+personalDifficulty: ⭐️⭐️⭐️
+topics: [array, sliding-window, binary-search, prefix-sum]
+url: https://leetcode.com/problems/minimum-size-subarray-sum/
+---
+
+# Prompt
+
+Given an array of positive integers `nums` and a positive integer `target`,
+return the minimal length of a subarray whose sum is greater than or equal to
+`target`. If there is no such subarray, return `0` instead.
+
+Example 1:
+
+> Input: target = 7, nums = [2,3,1,2,4,3]\
+> Output: 2
+
+Example 2:
+
+> Input: target = 4, nums = [1,4,4]\
+> Output: 1
+
+Example 3:
+
+> Input: target = 11, nums = [1,1,1,1,1,1,1,1]\
+> Output: 0
+
+Constraints:
+
+- `1 <= target <= 10^9`
+- `1 <= nums.length <= 10^5`
+- `1 <= nums[i] <= 10^4`
+
+Follow up: If you have figured out the O(n) solution, try coding another
+solution of which the time complexity is O(n log(n)).
+
+# Solution
+
+> Time Complexity: `O(n)`\
+> Space Complexity: `O(1)`
+
+The problem is asking for the minimum length of a subarray where the sum is
+equal to or exceeds the target value. To do this, we keep track of two diffrent
+pointers, the left and right. The left and right pointer begin at the start of
+the array. Every time we advance the right pointer, we add the value at the
+right pointer to the current sum. If the sum is greater than or equal to the
+target, we calculate the length of the subarray by finding the difference
+between the right and left pointers. If the length is less than the current
+minimum length, we update the minimum length. We then advance the left pointer,
+subtracting the value at the left pointer from the sum and continue updating the
+minimum length if needed until the sum is less than the target. Then we can
+repeat advancing the right pointer. Once we reach the end of the array and the
+sum is less than the target, we exit the loop. If the minumum length is the same
+as the initial value we set (a value larger than the array itself), we return 0,
+otherwise we return the minimum length.
+
+There is a note in the prompt that asks us to find a solution with a time
+complexity of `O(n * log(n))`. To accomplish this, we use binary search to find
+the smallest window that meets our criteria. We create a window that is the size
+of half of the array. We then iterate through the array finding the largest sum
+of the window. If the largest sum is greater than the target, we can shrink the
+window size in half like in binary search. We then iterate again, finding the
+largest sum of the new window. If the largest sum is less than the target, we
+expand the window to be halfway between the size of the current window and the
+previous window. This process is repeated until the window is the smallest it
+can be while still having a sum of at least the target. This approach maintains
+the window size and is closer to how I envision an actual sliding window to look
+like. The previous approach was more similar to a two-pointer approach. In my
+opinion however, the two-pointer approach is more intuitive and easier to
+understand.

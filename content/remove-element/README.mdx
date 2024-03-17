@@ -1,0 +1,56 @@
+---
+title: Remove Element
+problemNumber: 27
+completionDate: 01/30/2024
+difficulty: Easy
+personalDifficulty: ⭐⭐
+topics: [array, two-pointers]
+url: https://leetcode.com/problems/remove-element
+---
+
+# Prompt
+
+Given an integer array nums and an integer val, remove all occurrences of val in
+nums in-place. The order of the elements may be changed. Then return the number
+of elements in nums which are not equal to val.
+
+Consider the number of elements in nums which are not equal to val be k, to get
+accepted, you need to do the following things:
+
+- Change the array nums such that the first k elements of nums contain the
+  elements which are not equal to val. The remaining elements of nums are not
+  important as well as the size of nums
+- Return k
+
+Example 1:
+
+> Input: nums = [3,2,2,3], val = 3\
+> Output: 2, nums = [2,2,_,_]
+
+Example 2:
+
+> Input: nums = [0,1,2,2,3,0,4,2], val = 2\
+> Output: 5, nums = [0,1,4,0,3,_,_,_]
+
+Constraints:
+
+- `0 <= nums.length <= 100`
+- `0 <= nums[i] <= 50`
+- `0 <= val <= 100`
+
+# Solution
+
+> Time Complexity `O(n)`\
+> Space Complexity `O(1)`
+
+In this problem, we are given an array and trying to remove all instances of a
+certain value. One way to approach this is the use the remove function that
+arrays have, but often that results in elements being shifted which is an `O(n)`
+operation. Instead, we can use a two-pointer approach to solve this problem. The
+first pointer keeps track of all the valid numbers that we have seen so far. As
+we iterate through the array, we check to see if the current number is one of
+the allowed numbers. If it is, we swap it with the value at the first pointer
+and increment the first pointer. If it is not, we simply move on to the next
+number. Once we have iterated through the entire array, the first pointer will
+be a count of all the valid numbers and the array will be sorted such that all
+of those valid numbers are at the beginning.
